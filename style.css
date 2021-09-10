@@ -3,6 +3,141 @@
     margin: 0;
     padding: 0;
 }
+
+h1{
+    font-family: 'ubuntu';
+}
+
+h1,p{
+    text-align: center;
+}
+
 img{
     width: 50px;
+}
+
+ul{
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+li>p{
+    font-size: 20px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clearResult{
+    text-indent: -999999;
+}
+
+.dados--area{
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.dados{
+    text-align: center;
+}
+
+.dados>img{
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.resultado{
+    text-align: center;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+div.Wrapper-grafic{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+div>p{
+    color: #fff;
+}
+
+.btn--area{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btn{
+    padding: 6px;
+    background-color: rgb(157, 157, 163);
+    color: rgb(71, 69, 69);
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(122, 122, 128);
+    color: rgb(255, 255, 255);
+}
+
+#Nvezes{
+    border-top: 10px transparent;
+}
+
+#GraficoBarra{
+    display:flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 600px){
+    
+    img{
+        width: 60px;
+    }
+    label{
+        flex: 1;
+    }
+    .dados{
+        flex: 2;
+    }
+    .dados--area>div{
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 700px){
+    img{
+        width: 70px;
+    }
+    
+    #Nvezes{
+        display:flex;
+        text-align: center;
+        padding: 10px;
+    }
+    ul{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    li{
+        margin: 5px;
+        width: 7vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
 }

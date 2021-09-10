@@ -7,12 +7,28 @@
     <title>Rolando dados</title>
 </head>
 <body>
-    <h1>Rolando dados</h1>
-    <label for="rolar">
-        <input id="rolar" type="button" value="Rodar Dados">
-    </label>
-       <img id = "dado1" src = "./images/lado0.png">
-       <img id = "dado2" src = "./images/lado0.png">
+    <header>
+        <h1>Rolando dados<i><img src="./images/dice.svg" alt=""></i></h1>
+    </header>
+    <div class="dados--area">
+        <label for="rolar">
+        <input id="rolar" type="button" value="Rodar Dados" class="btn">
+        </label>
+        <span class="dados">
+            <img id = "dado1" src = "./images/lado0.png">
+            <img id = "dado2" src = "./images/lado0.png">
+        </span>
+        <div><span class="resultado"></span></div>
+    </div>
+    <span class="btn--area">
+        <button onclick="Simular1k()" class="btn">Simular 1000 lançamentos</button>
+    </span>
+    <div class="Wrapper-grafic">
+        <div id="Nvezes">
+            <ul></ul>
+        </div>
+        <div id="GraficoBarra"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
