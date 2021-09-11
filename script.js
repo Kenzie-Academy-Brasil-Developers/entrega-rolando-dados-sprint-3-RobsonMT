@@ -47,9 +47,9 @@ let lancamentos = 0;
 
   while(lancamentos <1000){
     lancamentos++;
-    let valorDado1 = Math.floor(Math.random()* 7);
+    let valorDado1 = Math.floor(Math.random()* 6+1);
     // console.log(valorDado1)
-    let valorDado2 = Math.floor(Math.random()* 7);
+    let valorDado2 = Math.floor(Math.random()* 6+1);
     // console.log(valorDado2)
     somaDados = valorDado1 + valorDado2;
 
