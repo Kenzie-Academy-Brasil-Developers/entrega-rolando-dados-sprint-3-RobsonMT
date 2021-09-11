@@ -39,7 +39,7 @@ header{
 }
 
 .dados--area{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -99,6 +99,7 @@ div>p{
     align-items: flex-end;
     justify-content: center;
     margin-top: 10px;
+    height: 220px;
 }
 
 @media screen and (min-width: 600px){
@@ -121,7 +122,9 @@ div>p{
     img{
         width: 70px;
     }
-    
+    #GraficoBarra{
+        height: 280px;
+    }
     #Nvezes{
         display:flex;
         text-align: center;
